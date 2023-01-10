@@ -1,12 +1,9 @@
-# fly.toml file generated for crud-nodejs-express-mongodb on 2023-01-09T21:33:06-03:00
+# fly.toml file generated for crud-mern on 2023-01-09T22:27:37-03:00
 
-app = "crud-nodejs-express-mongodb"
+app = "crud-mern"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
-
-[build]
-  builder = "heroku/buildpacks:20"
 
 [env]
   PORT = "8080"
