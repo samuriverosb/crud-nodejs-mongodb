@@ -3,7 +3,6 @@ import indexRoutes from "./routes/index.routes.js";
 import {engine} from 'express-handlebars';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
-import morgan from "morgan";
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
@@ -21,8 +20,7 @@ app.engine(".hbs", engine({
 app.set("view engine", ".hbs")
 
 // Middleware
-app.use(morgan("dev"))
-app.use(express.urlencoded({ extended: false }))
+// app.use(express.urlencoded({ extended: false }))
 
 // Routes
 app.use(indexRoutes);
