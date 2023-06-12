@@ -26,11 +26,6 @@ export const renderEditTask = async (req, res) => {
   }
 }
 
-export const editTask = async (req, res) => {
-  const { id } = req.params
-  await Task.findByIdAndUpdate(id, req.body)
-  res.redirect("/")
-}
 
 export const deleteTask = async (req, res) => {
   const { id } = req.params;
